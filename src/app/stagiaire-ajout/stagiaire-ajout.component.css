@@ -1,0 +1,50 @@
+
+input[type=text] {
+  border: none;
+  border-bottom: 2px solid rgb(84, 150, 84);
+  background-color: #f7f3f5;
+  outline: none;
+}
+
+label {
+  padding: 1em 1em 0 0;
+  display: inline-block;
+  color:black;
+}
+
+button {
+  position: relative;
+  top: 80px;
+  margin-left: 20px;
+  width: 90%;
+  font-size: x-large;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+button:hover {
+  background-color: #558609;
+}
+
+
+input:invalid {
+  border-bottom: 2px solid rgb(207, 86, 86);
+}
+
+
+.container {
+
+  background-color: beige;
+  width: 50%;
+  margin: auto;
+  margin-top:20px;
+}
+
+
+mat-form-field {
+  background-color: #e3e9ee;
+  margin: 20px;
+}
+
+.input-form {
+  width: 90%;
+}

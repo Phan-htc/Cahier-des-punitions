@@ -1,0 +1,10 @@
+`<div class="infos">
+  <div *ngIf="stagSelected">
+    <app-info-stagiaire [stag]="stagSelected" (updateEvent)="majStagiairesAAfficher()"> </app-info-stagiaire>
+  </div>
+  <div *ngFor="let s of stagiairesAAfficher index as i">
+    <app-stagiaire-detail (click)="afficherInfos(s)" (suppressionStagiaireEvent)="traiterSuppressionStagiaire($event)"
+      [stag]="s" [index]="i">
+    </app-stagiaire-detail>
+  </div>
+</div>`

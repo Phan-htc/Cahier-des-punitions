@@ -1,0 +1,30 @@
+<form [formGroup="form" (submit)="changementDetailStagiaire(form)">
+    <form class="input-form" appearance="fill">
+       </form>
+    <form appearance="fill">
+      <div>Nom :</div>
+      <input matInput type="text" name="nom" required minlength="2" maxlength="50" formControlName="nom">
+      <div class="alert">
+        <div *ngIf="form.value.nom.errors?.['required']">Le nom est obligatoire</div>
+        <div *ngIf="form.value.nom.errors?.['minlength']">Le Le nom doit comporter au moins 2 caractères</div>
+      </div>
+    </form>
+    <form appearance="fill">
+      <div>Prenom :</div>
+      <input matInput type="text" name="prenom" formControlName="prenom">
+    </form>
+    <form class="input-form" appearance="fill">
+      <div>adresse :</div>
+      <input matInput type="text" name="adresse" formControlName="adresse">
+    </form>
+    <form class="input-form" appearance="fill">
+      <div>Téléphone :</div>
+      <input matInput type="text" name="telephone" pattern="^(\d{2}\s){4}\d{2}$" formControlName="telephone">
+      <div class="alert">
+        <div *ngIf="form.value.invalid && (form.value.dirty || form.value.touched)">
+          Le Téléphone doit etre en ceformat 00 00 00 00 00
+        </div>
+      </div>
+    </form>
+    <button mat-raised-button type="submit" [hidden]="form.invalid">Enregistrer les changements</button>
+  </form>

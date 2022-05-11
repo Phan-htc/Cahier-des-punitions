@@ -1,0 +1,30 @@
+
+<mat-card class="container">
+  
+  <form #f="ngForm" (ngSubmit)="traiterFormulaire(f)"> 
+    
+    <mat-form-field class="input-form" appearance="fill">
+<!--importation de StagiaireAjoutComponent dans app.module.ts -->
+      <label for="nom">Nom :</label>
+      <input matInput type="text" name="nom" ngModel required minlength="2" maxlength="50" >
+    </mat-form-field>
+
+    <mat-form-field class="input-form" appearance="fill">
+      <label for="prenom">Prenom :</label>
+      <input matInput type="text" name="prenom" ngModel required>
+  </mat-form-field>
+
+  <mat-form-field class="input-form" appearance="fill">
+      <label for="telephone">Téléphone :</label>
+      <input matInput type="text" name="telephone" ngModel pattern="^(\d{2}\s){4}\d{2}$">
+  </mat-form-field>
+    
+  <mat-form-field class="input-form" appearance="fill">
+      <label for="">Mail:</label>
+      <input matInput type="text" name="mail" ngModel>    
+  </mat-form-field>
+
+    <button mat-raised-button type="submit" [hidden]="f.invalid">Ajouter</button>
+
+  </form>
+</mat-card>

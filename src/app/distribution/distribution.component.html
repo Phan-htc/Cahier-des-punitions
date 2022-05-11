@@ -1,0 +1,28 @@
+<form #f="ngForm" (ngSubmit)="traiterFormulaireAttribution(f)">
+  <h1>Distribuer une punition</h1>
+  
+  <label for="id_stagiaire">id du stagiaire</label>
+  <select name="id_stagiaire" id="id_stagiaire" ngModel>
+    <option value="stag_1">stagiaire_1</option>
+    <option value="stag_2">stagiaire_2</option>
+  </select>
+
+  <label for="id_punition">id de la punition</label>
+  <select name="id_punition" id="id_punition" ngModel>
+    <option value="vaiselle">vaisselle</option>
+    <option value="menage">menage</option>
+  </select>
+
+  <label for="lieu">lieu</label>
+  <input type="text" ngModel>
+
+  <label for="jour">Date</label>
+  <input type="Date" ngModel>
+
+  <button type="submit" [hidden]="f.invalid">Ajouter</button>
+</form>
+
+<div *ngFor="let d of DistributionAAfficher index as i">
+  <app-distribution-detail [dist]="d" [index]="i">
+  </app-distribution-detail>
+</div>

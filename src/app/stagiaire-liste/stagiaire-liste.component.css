@@ -1,0 +1,47 @@
+.nom {
+    background-color: #DAC3BD;
+    border-bottom: 3px solid white;
+    padding-right: 20px;
+  }
+  
+  td {
+    border-bottom: 3px solid white;
+    padding-right: 20px;
+  }
+  
+  .content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0, 15);
+    margin: auto;
+    margin-top: 100px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 15px;
+  }
+  
+  button:hover {
+    background-color: tomato;
+  }
+  
+  button {
+    position: relative;
+    top: 80px;
+    margin: auto;
+    width: 30%;
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 23%;
+    border: solid 2px #f3f3f3;
+  }
+  
+  div {
+    margin: 10px 10px;
+    padding: 10px;
+    text-align: center;
+  
+  }
+  

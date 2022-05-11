@@ -1,0 +1,22 @@
+nav {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+  }
+  
+    
+    .example-button-row {
+      width: auto;
+      background-color: #E2C2B3;
+    }
+
+    .example-button-row .mat-button-base {
+        margin: 8px 8px 8px 0;
+      }
+    
+.bouton
+{
+    background-color : #f7f3f5;
+    color:black;
+    font-family: 'Comfortaa', cursive;
+} 

@@ -1,0 +1,7 @@
+<div id="formulaire_punition">
+  <app-punition></app-punition>
+</div>
+<h1>Liste des Punitions</h1>
+<div *ngFor="let p of PunitionAAfficher index as i">
+  <app-punition-detail [puni]="p" [index]="i"></app-punition-detail>
+</div>
