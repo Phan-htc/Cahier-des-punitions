@@ -1,5 +1,13 @@
 # CahierDesPunitions
 
+================================================================================================
+
+VERY IMPORTANT !!!!!!
+
+When you clone this repository, don't forget to put the api folder in another folder.
+
+================================================================================================
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
 ## Development server
